@@ -1,0 +1,118 @@
+.premium{
+    padding:80px 70px;
+}
+
+.plan-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.plan-card{
+    width:300px;
+    background:#171725;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    position:relative;
+    transition:.3s;
+}
+
+.plan-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(255,79,163,.3);
+}
+
+.popular{
+    border:2px solid #ff4fa3;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff4fa3;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.plan-card h1{
+    color:#ff4fa3;
+    margin:20px 0;
+}
+
+.plan-card h1 span{
+    font-size:16px;
+    color:#ccc;
+}
+
+.plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+}
+
+.plan-card ul li{
+    margin:12px 0;
+    color:white;
+}
+
+.plan-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#ff4fa3;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.plan-card button:hover{
+    background:#e63b8c;
+}
+.premium-message {
+  text-align: center;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  width: fit-content;
+}
+@media(max-width:900px){
+
+.plan-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+}
+
+
+@media(max-width:600px){
+
+.plan-container{
+    grid-template-columns:1fr;
+
+}
+
+
+.plan-card{
+    width:100%;
+
+}
+
+
+.section-title{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+
+}
+}

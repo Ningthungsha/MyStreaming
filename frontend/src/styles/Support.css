@@ -1,0 +1,156 @@
+.support-page {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: white;
+  padding-top: 80px;
+}
+
+
+.support-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+.support-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+
+.support-hero p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+
+.support-hero input {
+  margin-top: 30px;
+  width: 400px;
+  max-width: 90%;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #1c1c1c;
+  color: white;
+}
+
+
+.help-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 8%;
+  flex-wrap: wrap;
+}
+
+
+.help-card {
+  background: #151515;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+
+.help-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.help-card p {
+  color: #aaa;
+}
+.legal-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.legal-hero h1 {
+  font-size: 42px;
+}
+
+.legal-hero p {
+  color: #aaa;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+.legal-content {
+  padding: 20px 8%;
+  display: grid;
+  gap: 20px;
+}
+
+
+.legal-card {
+  background: #151515;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+
+.legal-card h2 {
+  margin-bottom: 10px;
+  color: #ff4fa3;
+}
+
+
+.legal-card p {
+  color: #bbb;
+  line-height: 1.6;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 8%;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+  background: #151515;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.contact-info p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  background: #222;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+
+.contact-form button {
+  background: #ff4fa3;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.contact-form button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,48 @@
+.search-page{
+
+padding:120px 50px;
+background:#0b0b12;
+min-height:100vh;
+color:white;
+
+}
+
+
+.search-page h1{
+font-size:36px;
+
+}
+
+
+.search-page h2{
+color:#aaa;
+font-size:20px;
+margin-bottom:40px;
+
+}
+
+
+.no-results{
+text-align:center;
+padding:80px;
+
+}
+
+
+.no-results i{
+font-size:60px;
+color:#ff4fa3;
+
+}
+
+
+.no-results h3{
+font-size:28px;
+
+}
+
+
+.no-results p{
+color:#aaa;
+
+}
