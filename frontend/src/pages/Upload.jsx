@@ -35,7 +35,7 @@ function Upload() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/videos/upload", {
+      const res = await fetch("https://video-s-p.warnode.cloud/api/videos/upload", {
 
         method: "POST",
         body: formData,

@@ -15,7 +15,7 @@ function Search() {
     const searchVideos = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/videos/search?q=${query}`
+          `https://video-s-p.warnode.cloud/api/videos/search?q=${query}`
         );
 
         const data = await response.json();
@@ -49,7 +49,7 @@ function Search() {
             videos.map((video) => (
               <VideoCard
                 key={video._id}
-                image={`http://localhost:5000/uploads/${video.thumbnail}`}
+                image={`https://video-s-p.warnode.cloud/uploads/${video.thumbnail}`}
                 title={video.title}
                 info={`${video.category} • ${video.likes}`}
               />

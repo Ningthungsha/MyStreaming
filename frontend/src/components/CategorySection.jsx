@@ -9,7 +9,7 @@ function CategorySection({ title, category }) {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/api/videos/category/${encodeURIComponent(category)}`
+      `https://video-s-p.warnode.cloud/api/videos/category/${encodeURIComponent(category)}`
     )
       .then((res) => {
         console.log("Status:", res.status);

@@ -17,13 +17,13 @@ function VideoPlayer() {
 
   useEffect(() => {
 
-    fetch(`http://localhost:5000/api/videos/${id}`)
+    fetch(`https://video-s-p.warnode.cloud/api/videos/${id}`)
       .then((res) => res.json())
       .then((data) => {
 
         setVideo(data);
         setLiked(data.likes || 0);
-        fetch(`http://localhost:5000/api/videos/${id}/view`, {
+        fetch(`https://video-s-p.warnode.cloud/api/videos/${id}/view`, {
   method: "POST"
 })
 .then((res)=>res.json())
@@ -37,7 +37,7 @@ function VideoPlayer() {
 
 if (user) {
 
-  fetch(`http://localhost:5000/api/videos/watch/${id}`, {
+  fetch(`https://video-s-p.warnode.cloud/api/videos/watch/${id}`, {
 
     method: "POST",
 
@@ -63,7 +63,7 @@ if (user) {
       })
       .catch((err) => console.log(err));
 
-    fetch(`http://localhost:5000/api/comments/${id}`)
+    fetch(`https://video-s-p.warnode.cloud//api/comments/${id}`)
       .then((res) => res.json())
       .then((data) => {
 
@@ -86,7 +86,7 @@ if (user) {
     try {
 
       const res = await fetch(
-        `http://localhost:5000/api/videos/${id}/like`,
+        `https://video-s-p.warnode.cloud/api/videos/${id}/like`,
         {
           method: "POST",
           headers: {
@@ -122,7 +122,7 @@ if (user) {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/auth/subscribe",
+        "https://video-s-p.warnode.cloud/api/auth/subscribe",
         {
           method: "POST",
 
@@ -166,7 +166,7 @@ if (user) {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/comments",
+        "https://video-s-p.warnode.cloud/api/comments",
         {
           method: "POST",
 
@@ -237,7 +237,7 @@ if (user) {
           >
 
             <source
-              src={`http://localhost:5000/uploads/${video.videoUrl}`}
+              src={`https://video-s-p.warnode.cloud/uploads/${video.videoUrl}`}
               type="video/mp4"
             />
 

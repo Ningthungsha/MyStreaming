@@ -14,8 +14,8 @@ function VideoCard({ id, title, info, image }) {
       <div className="thumbnail">
 
         <img
-          src={`http://localhost:5000/uploads/${image}`}
-          alt={title}
+          src={'https://video-s-p.warnode.cloud/uploads/${image}'}
+          alt={image}
         />
 
         <span className="play">

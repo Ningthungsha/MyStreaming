@@ -19,7 +19,7 @@ function Profile() {
       return;
     }
 
-    fetch(`http://localhost:5000/api/videos/creator/${user._id}`)
+    fetch(`https://video-s-p.warnode.cloud/api/videos/creator/${user._id}`)
       .then((res) => res.json())
       .then((data) => {
         setVideos(data);
@@ -117,7 +117,7 @@ function Profile() {
               >
 
                 <img
-                  src={`http://localhost:5000/uploads/${video.thumbnail}`}
+                  src={`https://video-s-p.warnode.cloud/uploads/${video.thumbnail}`}
                   alt={video.title}
                 />
 

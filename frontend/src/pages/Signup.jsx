@@ -17,7 +17,7 @@ function Signup() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/auth/signup", {
+      const res = await fetch("https://video-s-p.warnode.cloud/api/auth/signup", {
 
         method: "POST",
 

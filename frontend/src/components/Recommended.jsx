@@ -15,8 +15,8 @@ function Recommended() {
     const user = JSON.parse(localStorage.getItem("user"));
 
     const url = user
-      ? `http://localhost:5000/api/videos/recommended/${user._id}`
-      : "http://localhost:5000/api/videos/recommended";
+      ? `https://video-s-p.warnode.cloud/api/videos/recommended/${user._id}`
+      : "https://video-s-p.warnode.cloud/api/videos/recommended";
 
 
     fetch(url)
