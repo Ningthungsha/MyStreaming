@@ -1,8 +1,9 @@
 const Video = require("../models/video");
 
 const uploadVideo = async (req, res) => {
-  try {
 
+  try {
+       console.log("Files:", req.files);
     const { title, description, category, creator } = req.body;
 
     const thumbnail = req.files?.thumbnail
